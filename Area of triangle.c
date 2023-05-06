@@ -13,4 +13,7 @@ area=sqrt(d);
 printf("area of triangle=%f sq units \n",area);
 getch();
 }
+//RESULT
+Enter three sides: 5 6 7
+Area of triangle =14.696939 sq units 
 
