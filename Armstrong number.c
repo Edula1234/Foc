@@ -20,3 +20,9 @@ int main() {
 
     return 0;
 }
+//RESULT
+Enter the value of n: 153
+153 is Armstrong number
+
+Enter the value of n: 127
+127 is not a Armstrong number 
