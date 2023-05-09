@@ -1,0 +1,12 @@
+#!/bin/bash
+
+echo "Enter the length of the rectangle: "
+read length
+echo "Enter the width of the rectangle: "
+read width
+area=$((length * width))
+echo "The area of the rectangle is: $area"
+//output 
+Enter the length of the rectangle:5
+Enter the width of the rectangle:10
+The area of the rectangle is: 50
