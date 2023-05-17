@@ -1,0 +1,15 @@
+#!/bin/bash
+
+max=$1
+
+for num in "$@"; do
+  if ((num > max)); then
+    max=$num
+  fi
+done
+
+echo "The largest number is: $max"
+//output 
+$ ./find_max.sh 10 5 20 15
+The largest number is: 20
+
