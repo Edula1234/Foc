@@ -1,0 +1,25 @@
+/bin/bash
+
+# get the year from user input
+echo "Enter a year: "
+read year
+
+# check if the year is divisible by 4
+if ((year % 4 == 0)); then
+  # if it is divisible by 4, check if it is also divisible by 100
+  if ((year % 
+    if ((year % 400 == 0)); then
+      echo "$year is a leap year"
+    else
+      echo "$year is not a leap year"
+    fi
+  else
+    echo "$year is a leap year"
+  fi
+else
+  echo "$year is not a leap year"
+  //output 
+  
+Enter a year:
+2024
+2024 is a leap year
