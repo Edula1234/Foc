@@ -1,0 +1,20 @@
+#!/bin/bash
+
+# get the two numbers from user input
+echo "Enter the first number: "
+read num1
+
+echo "Enter the second number: "
+read num2
+
+# calculate the product
+product=$(expr $num1 \* $num2)
+
+# print the result
+echo "The product is: $product"
+//output 
+Enter the first number:
+5
+Enter the second number:
+10
+The product is: 50
