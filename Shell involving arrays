@@ -1,0 +1,39 @@
+#!/bin/bash
+
+my_array=("apple" "banana" "cherry" "date" "elderberry")
+
+echo "Array elements:"
+echo "${my_array[@]}"
+
+echo "First element: ${my_array[0]}"
+echo "Third element: ${my_array[2]}"
+
+my_array[1]="blueberry"
+my_array[4]="fig"
+
+echo "Modified array:"
+echo "${my_array[@]}"
+
+echo "Iterating over array elements:"
+for element in "${my_array[@]}"
+do
+    echo "$element"
+done
+
+array_length=${#my_array[@]}
+echo "Array length: $array_length"
+//output 
+Array elements:
+apple banana cherry date elderberry
+First element: apple
+Third element: cherry
+Modified array:
+apple blueberry cherry date fig
+Iterating over array elements:
+apple
+blueberry
+cherry
+date
+fig
+Array length: 5
+
