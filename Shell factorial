@@ -1,0 +1,23 @@
+#!/bin/bash
+
+factorial() {
+  num=$1
+  result=1
+
+  for ((i=1; i<=num; i++)); do
+    result=$((result * i))
+  done
+
+  echo $result
+}
+
+# Prompt the user to enter a number
+read -p "Enter a number: " number
+
+result=$(factorial $number)
+
+echo "Factorial of $number is: $result"
+//output 
+$ ./factorial.sh
+Enter a number: 5
+Factorial of 5 is: 120
